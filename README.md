@@ -12,9 +12,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 This is my solution to making a responsive card using flexbox mainly. I have learned alot of new things in this project especially how to use flex direction, using mix-blend-mode to give the child container a color from its parent. Overall i am satisfied with the outcome. 
@@ -38,8 +36,8 @@ Mobile Version Screenshot
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Repo URL: https://github.com/itspavit/previewcard.github.io
+- Live Site URL: https://itspavit.github.io/previewcard.github.io/
 
 ## My process
 
