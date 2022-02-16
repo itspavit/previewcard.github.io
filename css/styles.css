@@ -1,0 +1,169 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* Primary colors */
+:root {
+  --mainbackground: hsl(233, 47%, 7%);
+  --cardbackground: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+
+  /* Neutral colors */
+  --White: hsl(0, 0%, 100%);
+  --mainparagraph: hsla(0, 0%, 100%, 0.75);
+  --statheadings: hsla(0, 0%, 100%, 0.6);
+
+  /* font weight */
+  --regularfontweight: 400;
+  --boldfontweight: 700;
+
+  /* font families */
+  --inter-fontfam: "Inter", sans-serif;
+  --lexendDeca-fontfam: "Lexend Deca", sans-serif;
+}
+
+/* basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-weight: var(--regularfontweight);
+  font-family: var(--inter-fontfam);
+  background-color: var(--mainbackground);
+  color: var(--White);
+}
+
+/* Used to center the card in middle of the page cannot be done without adding a width or height */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: var(--accent);
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--cardbackground);
+  max-width: 525px;
+  border-radius: 5px;
+  margin: 2rem 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span {
+  color: var(--accent);
+}
+
+.maintext p {
+  color: var(--mainparagraph);
+  margin-top: 1rem;
+}
+
+.stat-name {
+  color: var(--statheadings);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.text-list {
+  text-align: center;
+}
+
+h1,
+.stat-data {
+  font-size: 1.5rem;
+  font-weight: var(--boldfontweight);
+}
+
+.stats {
+  font-family: var(--lexendDeca-fontfam);
+}
+
+.header {
+  display: flex;
+  align-items: stretch;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  background-color: var(--accent);
+}
+
+.header picture {
+  width: 100%;
+}
+
+.header picture img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+
+.maintext {
+  margin-bottom: 1rem;
+}
+
+/* Styling for desktop and larger screen size */
+@media (min-width: 725px) {
+  .card {
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    max-width: 1100px;
+    align-items: stretch;
+  }
+  .header {
+    width: 47%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .text-list {
+    text-align: left;
+    flex-basis: 46%;
+    margin: 0;
+    margin: 4rem 2rem 2.5rem 3rem;
+  }
+  .stats {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+  .data1,
+  .data2,
+  .data3 {
+    flex-basis: 33%;
+  }
+  .maintext p {
+    margin-top: 3rem;
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
